@@ -14,7 +14,7 @@ class MyController extends Controller
     //truyen tham so cho controller
    	public function name($ten)
     {
-    	echo "Hello I'm: " . $ten;
+    	echo "Hello World I'm: " . $ten;
     }
 
 }
