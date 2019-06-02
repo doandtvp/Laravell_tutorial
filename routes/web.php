@@ -1,18 +1,5 @@
 <?php
-	Route::get('/hello', function() {
-	    echo "Hello Laravel! I am newbie!!!";
-	});
-
-	Route::get('goodbye', function() {
-		echo "Bye bye the world";
-	});
-
-	Route::get('tryhard', function() {
-		return "Xin chao cac ban";
-	});
-
 	//truyen tham so cho route
-
 	Route::get('Hoten/{ten}', function($ten) {
 		echo "Ten cua ban la: " . $ten;
 	});
@@ -59,7 +46,7 @@
 	Route::get('call-name/{ten}','MyController@name');
 
 	//work with URL
-	Route::get('MyRequest','MyController@GetURL');
+	Route::get('MyRequest','TestController@GetURL');
 
 	
 	//Gui nhan du lieu voi request
@@ -68,44 +55,10 @@
 
 
 	//Cookie
-	Route::get('setCookie','MyController@setCookie');
-	Route::get('getCookie','MyController@getCookie');
+	Route::get('setCookie','CookieController@setCookie');
+	Route::get('getCookie','CookieController@getCookie');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
+	//welcome
 	Route::get('/', function () {
 	    return view('welcome');
 	});
