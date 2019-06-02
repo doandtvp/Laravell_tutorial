@@ -11,17 +11,17 @@ class TestController extends Controller
     {
 
     	//---tra ve Route dang dung---
-    	// return $request -> path();
+    	return $request -> path();
 
     	// ---tra ve URL day du---
     	// return $request -> url();
 
     	//---kiem tra phuong thuc truyen---
-    	if ($request->isMethod('get')) {
-    		echo "Correct <3";
-    	} else {
-    		echo "Wrong !!!";
-    	}
+    	// if ($request->isMethod('get')) {
+    	// 	echo "Correct <3";
+    	// } else {
+    	// 	echo "Wrong !!!";
+    	// }
 
     	//---kiem tra chuoi X co trong URL hay khong---
     	// if ($request->is('My*')) {
