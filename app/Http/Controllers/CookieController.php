@@ -13,7 +13,7 @@ class CookieController extends Controller
         $response->withCookie(
             'DoanTran', //name of Cookie
             'Basic - Laravel ', //value of Cookie
-            0.5 //time(minute)
+            1 //time(minute)
         );
         echo "Da xet Cookie !";
         return $response;
